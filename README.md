@@ -1,6 +1,6 @@
-## React Recruit Application
+## JavaScript UI React Application
 
-* For Recruiter and Candidate roles
+* JavaScript React Templating
 
 ## Setup
 * `git clone`
