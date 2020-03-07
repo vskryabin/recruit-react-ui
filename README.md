@@ -1,4 +1,4 @@
-## JavaScript UI React Application
+## JavaScript React UI Application
 
 * JavaScript React Templating
 
