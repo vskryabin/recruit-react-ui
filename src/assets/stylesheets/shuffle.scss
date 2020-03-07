@@ -1,0 +1,281 @@
+@import './variables.scss';
+
+
+button.style-close {
+  top: 5px;
+  right: 5px;
+  bottom: 0;
+  // margin: auto;
+  width: 35px;
+  height: 35px;
+  background: lighten($fuscia, 15%);
+  border: 0;
+  border-radius: 4px;
+  color: $white;
+  font-size: 20px;
+  position: absolute;
+  display: none;
+}
+
+.container-full {
+  max-width: 95%;
+}
+
+.jumbo-header {
+  margin-bottom: 1rem;
+}
+
+.jumbo-box {
+  padding: 2rem 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+
+.jumbo-label {
+  font-weight: 350;
+}
+
+.card-description {
+  margin-top:15px;
+}
+
+.card:hover button.style-close {
+  display: block;
+}
+
+a {
+  color: lighten($blue, 10%);
+}
+
+a:hover {
+  color: lighten($blue, 30%);
+}
+
+.text-blue h4 {
+  font-weight: 700;
+  color: $fuscia;
+  clear:both;
+}
+
+.text-blue:hover {
+  font-weight: 700;
+  color: $fuscia;
+  clear:both;
+}
+
+.text-black {
+  font-weight: 700;
+  color: $darkgray;
+  clear:both;
+}
+
+.text-black:hover {
+  font-weight: 700;
+  color: $darkgray;
+  clear:both;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.no-border {
+  border: none;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.auto-height {
+  height: auto;
+}
+
+.top-right-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.text-decoration-none:hover {
+  text-decoration: none;
+}
+
+#shuffle {
+  position: relative;
+  width: 90%;
+  // max-width: 800px;
+  margin: auto;
+
+  header {
+    position: relative;
+    padding: 16px;
+    height: 45px;
+    margin: 4px 0;
+
+  }
+
+  .position-center {
+    top: 50%;
+    left: 50%;
+    position: relative;
+  }
+
+  .list-item:not(.grid) {
+    min-width: 722px;
+  }
+
+  .list-item {
+    position: relative;
+    border: 1px solid lightgray;
+    margin: 0 6px 6px 6px;
+    padding: 10px;
+    list-style-type: none;
+    min-height: 100px;
+  
+    &:hover button {
+      display: block;
+    }
+
+    .position-name {
+        font-weight: 700;
+        color: $fuscia;
+        clear:both;
+      }
+
+    .position-bottom {
+      font-weight: 400;
+      font-size: 18px;
+      color: lighten($darkgray, 15%);
+      clear:both;
+    }
+
+    .position-front {
+      display: inline-block;
+      // width: 250px;
+      width: 33%;
+    }
+
+    .position-info, .position-other {
+      display: inline-block;
+      // width: 250px;      
+      width: 33%;      
+      vertical-align: top;
+      // padding-top: 5px;
+      padding-left: 5 px;
+      padding-right: 5px;
+      padding-bottom: 0px;
+    }
+
+    .position-item-detail-middle {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    &.list {
+      display: block;
+
+      .clearfix {
+        clear:both;
+      }
+
+      img {
+        float: left;
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+        border-radius: 2px 0 0 2px;
+      }
+
+      .img-sprite {
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 2px 0 0 2px;
+      }
+
+       .position-look {
+        margin-top:0px;        
+      }   
+
+      .position-specifics {
+        margin-top:5px;
+        margin-bottom:0px;     
+      }      
+
+      button {
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        margin: auto;
+        width: 35px;
+        height: 35px;
+        background: lighten($fuscia, 15%);
+        border: 0;
+        border-radius: 4px;
+        color: $white;
+        font-size: 20px;
+      }
+    }
+
+    &.grid {
+      display: inline-block;
+      width: 250px;
+      // width: 33%;
+      min-height: 120px;
+
+      img {
+          margin-right: 8px;
+          width: 80px;
+          height: 80px;
+          border-radius: 2px 0 0 2px;
+      }
+
+      .position-info, .img-sprite {
+        display:none;
+      }
+
+      .position-front {
+        min-height: 65px;
+        width: 250px;
+      }
+
+      .position-other {
+        min-height: 90px;
+        width: 250px;
+      }
+
+      .position-bottom {
+        font-weight: 400;
+        font-size: 18px;
+        color: lighten($darkgray, 5%);
+        margin: 0px 5px 0px 0px;
+        padding: 0px;
+      }
+
+      button {
+        top: 0;
+        right: 0;
+        font-size: 25px;
+        background: lighten($fuscia, 15%);
+        border: 0;
+        border-radius: 4px;
+        color: $white;
+        font-size: 20px;        
+      }
+    }
+
+    button {
+      display: none;
+      position: absolute;
+    }
+  }
+}

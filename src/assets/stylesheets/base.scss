@@ -1,0 +1,149 @@
+@import './normalize.scss';
+@import './variables.scss';
+@import './header.scss';
+@import './shuffle.scss';
+@import './specific.scss';
+@import './toggle.scss';
+
+*, *:before, *:after { box-sizing: border-box; }
+
+.form-control {
+  color: black;
+}
+
+.form-control:focus {
+  color: black;
+}
+
+html, body, input, button, select, option {
+  color: $darkgray;
+  font-family: "museo-sans-rounded", sans-serif;
+}
+
+html, body, #render-target {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: $white;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+
+.position-center {
+  left: 50%;
+  top: 50%;
+  position: relative;
+}
+
+#main-content {
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+.card {
+  background: $white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.li-selected {
+  // border: 1px solid gray !important;
+  background: #eef2f7;
+}
+
+.navbar-buttons {
+  padding-bottom: 35px;
+}
+
+.nav-buttons {
+  // min-height: 80px;
+  // min-width: 637px;
+  min-width: 815px;
+}
+
+.abs-left {
+  position: absolute;
+  left: 0;
+}
+.abs-right {
+  position: absolute;
+  right: 0;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+ul {
+  padding: 0;
+}
+
+.Dropdown {
+  position: absolute;
+  z-index: 3;
+  background: #FFF;
+  width: 100%;
+  border: 2px solid $fuscia;
+  border-radius: 3px;
+  padding: 0 4px;
+  line-height: 34px;
+  font-size: 13px;
+  cursor: pointer;
+
+  .placeholder {
+    padding: 0 4px;
+  }
+
+  .Dropdown-option, &.is-open .placeholder {
+    border-bottom: 1px solid $lightgray;
+    padding: 0 4px;
+
+    &:hover {
+      background: rgba(0,0,0,0.03);
+    }
+  }
+
+  .Dropdown-arrow {
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-family: 'FontAwesome';
+
+    &:before {
+      content: "\f107";
+    }
+  }
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: $i;
+  }
+}
