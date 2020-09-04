@@ -23,7 +23,7 @@
     "express": "^4.16.4",
     "lodash": "^4.17.13",
     "morgan": "^1.9.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "date-fns": "1.30.1",
